@@ -1,11 +1,20 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Regular.ttf');
+    font-weight: normal;
+    font-display: auto;
+    font-style: normal;
+}
 html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     line-height: 1.6;
     font-size: 18px;
+    background: #FFFFFB;
+    color: #191923;
 }
 
 * {
@@ -13,8 +22,12 @@ body {
 }
 
 a {
-    color: #0070f3;
+    color: #FF6B6C;
     text-decoration: none;
+}
+
+h1, h2 {
+    color: #5B5F97;
 }
 
 a:hover {

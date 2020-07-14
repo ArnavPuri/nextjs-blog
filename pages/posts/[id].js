@@ -10,6 +10,7 @@ export default function Post({postData}) {
                 <title>{postData.title}</title>
             </Head>
             <article>
+                <img src={postData.image} alt=""/>
                 <h1 className={utilStyles.headingXl}>{postData.title}</h1>
                 <div className={utilStyles.lightText}>
                     <Date dateString={postData.date}/>
