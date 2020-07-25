@@ -5,7 +5,7 @@ date: '2019-04-05'
 categories: 
 description: 'Dreams are scary hard, chase them one day at a time.'
 image: '/images/one-day-at-a-time.jpg'
-image-sm: '/images/one-day-at-a-time-tb.jpg'
+imageSm: '/images/one-day-at-a-time-tb.jpg'
 comments: 'true'
 ---
 ## Dreaming is easy, making them come true is damn hard. 

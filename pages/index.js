@@ -9,28 +9,24 @@ export default function Home({allPostsData}) {
     return (
         <Layout home>
             <Head>
-                <title>Create Next App</title>
+                <title>Thoughts of Arnav Puri</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
 
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                <h2 className={utilStyles.headingLg}>Words. Hopes. Recordings.</h2>
                 <ul className={utilStyles.list}>
-                    {allPostsData.map(({id, date, title, description, image}) => (
+                    {allPostsData.map(({id, date, title, description, imageSm}) => (
                         <li key={id}>
                             <Link href="/posts/[id]" as={`/posts/${id}`}>
                                 <div className={utilStyles.listItem}>
-                                    <img src={image} alt={title} className={utilStyles.postImage}/>
+                                    <img src={imageSm} alt={title} className={utilStyles.postImage}/>
                                     <div className={utilStyles.content}>
-                                        <a>{title}</a>
+                                        <h1 className={'post-title'}>{title}</h1>
                                         <p>{description}</p>
-                                        <br/>
                                         <small className={utilStyles.lightText}>
                                             <Date dateString={date}/>
                                         </small>
-
-
                                     </div>
                                 </div>
                             </Link>
@@ -43,7 +39,7 @@ export default function Home({allPostsData}) {
 }
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData()
+    const allPostsData = getSortedPostsData();
     return {
         props: {
             allPostsData

@@ -5,7 +5,7 @@ date: '2019-04-05'
 categories: 
 description: 'Some words of encouragement for those struggling'
 image: '/images/offence.jpg'
-image-sm: '/images/img/offence-tb.jpg'
+imageSm: '/images/offence-tb.jpg'
 comments: 'true'
 ---
 

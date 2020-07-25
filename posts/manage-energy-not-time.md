@@ -5,7 +5,7 @@ date: '2019-05-10'
 categories: 
 description: 'A perspective on time management'
 image: '/images/manage-energy-not-time.jpg'
-image-sm: '/images/manage-energy-not-time-tb.jpg'
+imageSm: '/images/manage-energy-not-time-tb.jpg'
 comments: 'true'
 ---
 ### *Everyone got the same amount of hours but those hours look different to everyone*
