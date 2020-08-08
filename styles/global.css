@@ -21,9 +21,9 @@ body {
 
 /*for dark mode*/
 /*@media (prefers-color-scheme: dark) {*/
-/*    body {*/
-/*        background-color: #000;*/
-/*        color: #ccc;*/
+/*    html, body {*/
+/*        background: #171612;*/
+/*        color: #fbe6e7;*/
 /*    }*/
 /*}*/
 

@@ -4,20 +4,22 @@ import {getAllPostIds, getPostData} from '../../lib/posts';
 import utilStyles from '../../styles/utils.module.css'
 import Date from "../../components/date";
 import React from "react";
+import ReactMarkdown from 'react-markdown'
 
 export default function Post({postData}) {
+    let info = postData.frontMatter;
     return (
         <Layout>
             <Head>
-                <title>{postData.title}</title>
+                <title>{info.title}</title>
             </Head>
             <article>
-                <h1 className={`${utilStyles.headingXl} ${utilStyles.center}`}>{postData.title}</h1>
-                <img src={postData.image} alt="" className={utilStyles.postHeroImage}/>
+                <h1 className={`${utilStyles.headingXl} ${utilStyles.center}`}>{info.title}</h1>
+                <img src={info.image} alt="" className={utilStyles.postHeroImage}/>
                 <div className={utilStyles.lightText} style={{marginTop: '12px'}}>
-                    <Date dateString={postData.date}/>
+                    <Date dateString={info.date}/>
                 </div>
-                <div dangerouslySetInnerHTML={{__html: postData.contentHtml}} style={{marginTop: '20px'}}/>
+                <ReactMarkdown source={postData.mdContent} escapeHtml={false}/>
             </article>
         </Layout>
     )

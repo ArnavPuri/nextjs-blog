@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port=3001",
     "build": "next build",
     "start": "next start"
   },
@@ -13,6 +13,7 @@
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1",
     "remark": "^12.0.0",
     "remark-html": "^11.0.2"
   }
